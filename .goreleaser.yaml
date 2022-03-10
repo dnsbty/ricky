@@ -25,3 +25,16 @@ changelog:
     exclude:
       - '^docs:'
       - '^test:'
+brews:
+  - tap:
+      owner: dnsbty
+      name: homebrew-dnsbty
+      branch: main
+    commit_author:
+      name: Dennis Beatty
+      email: dennis@dcbeatty.com
+    commit_msg_template: "Brew formula update for {{ .ProjectName }} version {{ .Tag }}"
+    folder: Formula
+    homepage: "https://github.com/dnsbty/ricky"
+    description: "Open a random Wikipedia article in your browser"
+    license: "MIT"
